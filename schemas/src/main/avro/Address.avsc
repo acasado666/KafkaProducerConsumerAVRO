@@ -1,0 +1,24 @@
+{
+  "name": "Address",
+  "namespace": "com.kodebytes.acasado.domain.generated",
+  "type": "record",
+  "fields": [
+    {
+      "name": "addressLine1",
+      "type": "string"
+    },
+    {
+      "name": "city",
+      "type": "string"
+    },
+    {
+      "name": "country",
+      "type": "string",
+      "default": "Switzerland"
+    },
+    {
+      "name": "zip",
+      "type": "string"
+    }
+  ]
+}

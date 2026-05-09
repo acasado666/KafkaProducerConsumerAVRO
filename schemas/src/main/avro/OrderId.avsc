@@ -1,0 +1,14 @@
+{
+  "name": "OrderId",
+  "namespace": "com.kodebytes.acasado.domain.generated",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    }
+  ]
+}

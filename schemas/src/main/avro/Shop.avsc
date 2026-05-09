@@ -1,0 +1,16 @@
+{
+  "name": "Shop",
+  "namespace": "com.kodebytes.acasado.domain.generated",
+  "doc": "This is the schema for the ice cream shop",
+  "type": "record",
+  "fields": [
+    {
+      "name": "shopName",
+      "type": "string"
+    },
+    {
+      "name": "address",
+      "type": "Address"
+    }
+  ]
+}
