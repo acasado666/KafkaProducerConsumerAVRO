@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8083
 
 spring:
   application:
@@ -12,8 +12,7 @@ spring:
     activate:
       on-profile: local
   kafka:
-    kafka:
-      template:
+    template:
         default-topic: ice-cream-orders
     consumer:
       bootstrap-servers: localhost:9092
