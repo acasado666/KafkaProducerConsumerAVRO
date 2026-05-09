@@ -1,0 +1,46 @@
+{
+  "name": "OrderLineItem",
+  "namespace": "com.kodebytes.acasado.domain.generated",
+  "type": "record",
+  "fields": [
+    {
+      "name": "recipient",
+      "type":{
+        "type" : "enum",
+        "name": "Recipient",
+        "doc" : "Type of recipient for the order line item",
+        "symbols" : ["CONE", "GLASS_CUP", "CARD_BOARD_CUP"]
+      }
+    },
+    {
+      "name": "flavor",
+      "type":{
+        "type" : "enum",
+        "name": "Flavor",
+        "symbols" : ["VANILLA", "STRAWBERRY", "CHOCOLATE"]
+      }
+    },
+    {
+      "name": "size",
+      "type":{
+        "type" : "enum",
+        "name": "Size",
+        "symbols" : ["SMALL", "MEDIUM", "LARGE"]
+      }
+    },
+    {
+      "name" : "quantity",
+      "type" : "int"
+    },
+    {
+      "name" : "cost",
+      "type":{
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 3,
+        "scale": 2
+
+      }
+    }
+  ]
+}

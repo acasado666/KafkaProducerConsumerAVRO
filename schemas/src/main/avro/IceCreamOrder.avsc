@@ -1,0 +1,59 @@
+{
+  "name": "IceCreamOrder",
+  "namespace": "com.kodebytes.acasado.domain.generated",
+  "doc": "This is the schema for the ice cream order",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "OrderId"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "nickName",
+      "type": "string",
+      "default": "",
+      "doc": "Optional field represents the nick name for the user"
+    },
+    {
+      "name": "shop",
+      "type": "Shop"
+    },
+    {
+      "name": "orderLineItems",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "orderLineItem",
+          "type": "OrderLineItem"
+        }
+      }
+    },
+    {
+      "name": "ordered_time",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "pick_up",
+      "type": {
+        "type": "enum",
+        "name": "PickUp",
+        "symbols": [
+          "IN_STORE",
+          "CURBSIDE"
+        ]
+      }
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "default": "NEW"
+    }
+  ]
+}

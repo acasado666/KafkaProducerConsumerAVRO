@@ -1,0 +1,25 @@
+{
+  "id": 164,
+  "name": "Antonio Casado",
+  "nickName": "Toni",
+  "shop": {
+    "shopName": "Giovanni's Ice Cream",
+    "address": {
+      "addressLine1": "1234 Address Line 1",
+      "city": "Zurich",
+      "country": "Switzerland",
+      "zip": "8044"
+    }
+  },
+  "orderLineItems": [
+    {
+      "name": "Ice Cream Cone",
+      "flavor": "VANILLA",
+      "size": "MEDIUM",
+      "quantity": 1,
+      "cost": 3.99
+    }
+  ],
+  "ordered_time": "2022-06-16T18:40:55.472",
+  "status": "NEW"
+}

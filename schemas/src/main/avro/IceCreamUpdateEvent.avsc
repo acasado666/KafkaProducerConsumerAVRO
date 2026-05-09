@@ -1,0 +1,25 @@
+{
+  "name": "IceCreamUpdateEvent",
+  "namespace": "com.kodebytes.acasado.domain.generated",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "status",
+      "type": {
+        "type": "enum",
+        "name": "OrderStatus",
+        "symbols": [
+          "PREPARING",
+          "READY_FOR_PICK_UP"
+        ]
+      }
+    }
+  ]
+}
